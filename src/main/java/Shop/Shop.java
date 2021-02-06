@@ -20,4 +20,6 @@ public class Shop {
 
     public void addStockItem(ISell item){ this.stockList.add(item); }
 
+    public void removeStockItem(ISell item){ this.stockList.remove(item); }
+
 }
