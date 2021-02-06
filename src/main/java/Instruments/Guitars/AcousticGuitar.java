@@ -9,13 +9,13 @@ public class AcousticGuitar extends Guitar implements IPlay {
     private boolean isElectro;
 
     public AcousticGuitar(String brand, String model, String colour, String finish,
-                          double costPrice, double salePrice, double retailPrice, double margin,
-                          boolean hasCase, String bodyMaterial, String neckMaterial, String fBoardMaterial,
-                          String hWareMaterial, String bodyStyle, int numOfStrings, String pickupSystem,
-                          double soundholeDiam, boolean isElectro) {
+                          double costPrice, double salePrice, double retailPrice, boolean hasCase,
+                          String bodyMaterial, String neckMaterial, String fBoardMaterial, String hWareMaterial,
+                          String bodyStyle, int numOfStrings, String pickupSystem, double soundholeDiam,
+                          boolean isElectro) {
 
-        super(brand, model, colour, finish, costPrice, salePrice, retailPrice, margin,
-                hasCase, bodyMaterial, neckMaterial, fBoardMaterial, hWareMaterial, bodyStyle, numOfStrings);
+        super(brand, model, colour, finish, costPrice, salePrice, retailPrice, hasCase, bodyMaterial,
+                neckMaterial, fBoardMaterial, hWareMaterial, bodyStyle, numOfStrings);
 
         this.pickupSystem  = pickupSystem;
         this.soundholeDiam = soundholeDiam;

@@ -14,11 +14,11 @@ public abstract class Guitar extends Instrument implements IPlay {
 
 
     public Guitar(String brand, String model, String colour, String finish,
-                  double costPrice, double salePrice, double retailPrice, double margin,
-                  boolean hasCase, String bodyMaterial, String neckMaterial, String fBoardMaterial,
-                  String hWareMaterial, String bodyStyle, int numOfStrings) {
+                  double costPrice, double salePrice, double retailPrice, boolean hasCase,
+                  String bodyMaterial, String neckMaterial, String fBoardMaterial, String hWareMaterial,
+                  String bodyStyle, int numOfStrings) {
 
-        super(brand, model, colour, finish, costPrice, salePrice, retailPrice, margin, hasCase);
+        super(brand, model, colour, finish, costPrice, salePrice, retailPrice, hasCase);
 
         this.bodyMaterial   =  bodyMaterial;
         this.neckMaterial   =  neckMaterial;

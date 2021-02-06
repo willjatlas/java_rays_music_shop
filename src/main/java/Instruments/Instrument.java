@@ -9,12 +9,10 @@ public abstract class Instrument {
     private double costPrice;
     private double salePrice;
     private double retailPrice;
-    private double margin;
     private boolean hasCase;
 
     public Instrument(String brand, String model, String colour, String finish,
-                      double costPrice, double salePrice, double retailPrice, double margin,
-                      boolean hasCase){
+                      double costPrice, double salePrice, double retailPrice, boolean hasCase){
 
         this.brand       =  brand;
         this.model       =  model;
@@ -23,7 +21,6 @@ public abstract class Instrument {
         this.costPrice   =  costPrice;
         this.salePrice   =  salePrice;
         this.retailPrice =  retailPrice;
-        this.margin      =  margin;
         this.hasCase     =  hasCase;
 
     }
@@ -55,10 +52,6 @@ public abstract class Instrument {
     public double getRetailPrice() { return retailPrice; }
 
     public void setRetailPrice(double retailPrice) { this.retailPrice = retailPrice; }
-
-    public double getMargin() { return margin; }
-
-    public void setMargin(double margin) { this.margin = margin; }
 
     public boolean isHasCase() { return hasCase; }
 
