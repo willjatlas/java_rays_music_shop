@@ -1,6 +1,8 @@
 package Instruments;
 
-public abstract class Instrument {
+import Shop.ISell;
+
+public abstract class Instrument implements ISell {
 
     private String brand;
     private String model;
@@ -56,4 +58,10 @@ public abstract class Instrument {
     public boolean isHasCase() { return hasCase; }
 
     public void setHasCase(boolean hasCase) { this.hasCase = hasCase; }
+
+    public double calculateMarkup(){
+        double markup = ((this.salePrice - this.costPrice) / costPrice) * 100;
+        return Math.round(markup * 100.0)/ 100.0;
+    }
+
 }

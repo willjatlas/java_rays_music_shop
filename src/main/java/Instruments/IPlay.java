@@ -1,6 +1,3 @@
 package Instruments;
 
-public interface IPlay {
-    String makeSound(
-    );
-}
+public interface IPlay { String makeSound(); }
