@@ -22,4 +22,13 @@ public class Shop {
 
     public void removeStockItem(ISell item){ this.stockList.remove(item); }
 
+    // Returns the total stock list profit value.
+    public double getTotalProfitValue(){
+        double total = 0.00;
+        for (ISell inst : stockList){
+            total += inst.getProfitValue();
+        }
+        return total;
+    }
+
 }

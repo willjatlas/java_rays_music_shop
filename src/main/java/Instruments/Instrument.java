@@ -59,9 +59,15 @@ public abstract class Instrument implements ISell {
 
     public void setHasCase(boolean hasCase) { this.hasCase = hasCase; }
 
+    // Returns the profit value as a percentage (ie. return of 20.00 is 20%)
     public double calculateMarkup(){
         double markup = ((this.salePrice - this.costPrice) / costPrice) * 100;
         return Math.round(markup * 100.0)/ 100.0;
+    }
+
+    // Returns the profit difference between sale and cost price.
+    public double getProfitValue(){
+        return this.getSalePrice() - this.getCostPrice();
     }
 
 }

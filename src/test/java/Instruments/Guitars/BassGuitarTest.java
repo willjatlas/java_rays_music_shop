@@ -1,4 +1,4 @@
-package Instruments;
+package Instruments.Guitars;
 
 import Instruments.Guitars.BassGuitar;
 import org.junit.Before;

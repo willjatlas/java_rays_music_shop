@@ -1,6 +1,5 @@
-package Brass;
+package Instruments.Brass;
 
-import Instruments.Brass.Trumpet;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -14,7 +13,7 @@ public class TrumpetTest {
     public void before(){
         trumpet = new Trumpet("Yamaha", "YTR2330", "Gold", "Metal",
                 247.89, 449.00, 599.00, true,
-                "Brass", "Steel", "Bb", "One Piece", 11.65);
+                "Instruments/Brass", "Steel", "Bb", "One Piece", 11.65);
     }
 
     @Test
